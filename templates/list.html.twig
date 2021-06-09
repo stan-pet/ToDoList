@@ -1,0 +1,32 @@
+{% include 'layout/basic.html.twig'%}
+{% include 'partials/header.html.twig'%}
+<body>
+    <div class="container">
+        <div class="content">
+            <a href="../create.php"><i class="fa fa-plus"></i> Add New Task</a>
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date Created</th>
+                    <th>Action</th>
+                </tr>
+                <tbody>
+                <tr>
+                    <td>{{ id }}</td>
+                    <td>{{ title }}</td>
+                    <td>{{ description }}</td>
+                    <td>{{ date_created }}</td>
+                    <td>
+                        <a href="../update.php?id='. {{ id }} .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>
+                        <a href="../delete.php?id='. {{ id }} .'" title="Delete Record" data-toggle="tooltip"><span class="fa fa-trash"></span></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+
+{% include 'partials/footer.html.twig'%}

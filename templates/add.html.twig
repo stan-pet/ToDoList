@@ -1,0 +1,23 @@
+{% include 'layout/basic.html.twig'%}
+{% include 'partials/header.html.twig'%}
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Insert</h3>
+            <hr />
+        </div>
+    </div>
+    <form name="insertrecord" method="post" action="../insert.php">
+        <div class="row">
+            <div class="col-md-4"><b>Title</b>
+                <input type="text" id="title" name="title" class="form-control" required>
+            </div>
+            <div class="col-md-4"><b>Description</b>
+                <input type="text" id="description" name="description" class="form-control" required>
+            </div>
+        </div>
+        <input type="submit" id="insert" name="insert" value="Submit">
+    </form>
+</div>
+{% include 'partials/footer.html.twig'%}

@@ -1,0 +1,12 @@
+{
+    "require": {
+      "twig/twig": "^3.3",
+      "ext-pdo": "*"
+    },
+    "autoload": {
+      "classmap": [
+        "config",
+        "src"
+      ]
+    }
+}
