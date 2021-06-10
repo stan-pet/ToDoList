@@ -1,12 +1,37 @@
 body {
     margin: 0;
     padding: 0;
+    color: #000 !important;
+    font-family: sans-serif;
 }
-
+* {
+    box-sizing:border-box;
+    color: #000;
+}
+input[type=text] {
+    padding:10px;
+    margin:10px 0;
+    font-family: sans-serif;
+}
+#title {
+    text-align: left;
+}
+#listTasks, #createTask, .update, .delete, input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+input[type="submit"] {
+    cursor: pointer;
+}
 .header {
     padding: 15px;
     text-align: center;
-    background: #1abc9c;
     color: white;
     font-size: 15px;
 }
@@ -17,15 +42,30 @@ body {
 .content {
     width: 50%;
     margin: 0 auto;
+    text-align: center;
 }
 a {
-    color: #fff;
+    color: #000;
     font-size: 24px;
     text-decoration: none;
 }
-a:hover {
+th, tr, td {
     color: #000;
+}
+a:hover {
+    color: #fff;
 }
 h2 {
     text-align: center;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }

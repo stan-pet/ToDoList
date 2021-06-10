@@ -1,0 +1,16 @@
+{% include 'layout/basic.html.twig'%}
+<div class="container">
+    <div class="content">
+        {% for result in results %}
+            <form action="" method="post">
+                <input type="text" id="title" data-custom-value="{{result.id}}" name="title" value="{{ result.title|e }}" placeholder="Title" required>
+                <br/>
+                <textarea id="description" name="description" rows="10" cols="50" required>{{ result.description|e }}</textarea>
+                <br/>
+                <input type="submit" id="saveUpdate" value="Submit">
+            </form>
+        {% endfor %}
+    </div>
+    </div>
+</div>
+{% include 'partials/footer.html.twig'%}
